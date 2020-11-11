@@ -14,8 +14,9 @@ we are adjusting the hyperparameters
 | ------ | ----- | ----- | ---- | ------ | ---- | ---- | ----- |
 | 72.1%  | 51.7% | 80    | 0.3  | 0.0003 | 0.1  | 60   | 32    |
 | 59.1%  |       | 80    | 0.3  | 0.003  | 0.5  | 20   | 32    |
-| 68.4%  |       | 80    | 0.3  | 0.0003 | 0.4  | 60   | 32    |
 | 71.9%  | 51.7% | 128   | 0.3  | 0.0003 | 0.5  | 30   | 32    |
+| 68.4%  | 45.8% | 128   | 0.25  | 0.0003 | 0.1  | 60   | 64    |
+
 
 # circle loss
 the dist of the circle loss achieved by cos dist in paper, we add euclidean dist in the loss.py
