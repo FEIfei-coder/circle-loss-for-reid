@@ -11,7 +11,7 @@ we are adjusting the hyperparameters
 >>> python train2.py
 ```
 
-# Implement (use randomsampler func)
+# Implement
 - Dataset: market1501
 - baseline: resnet50 without fc and tricks
 
