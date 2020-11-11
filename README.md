@@ -2,9 +2,14 @@
 we show simple reproduction of circle loss for reid. 
 we let resnet50 as the baseline without any trick.
 
-paper: [circle loss](https://arxiv.org/pdf/2002.10857.pdf) 
+paper: [https://arxiv.org/pdf/2002.10857.pdf](https://arxiv.org/pdf/2002.10857.pdf) 
 #### But unfortunately, we did not achieve the accuracy rate mentioned in the paper by resnet50 baseline 
 we are adjusting the hyperparameters 
+
+# Run
+```
+>>> python train2.py
+```
 
 # Implement
 - Dataset: market1501
