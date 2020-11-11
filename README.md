@@ -6,9 +6,6 @@ paper: [https://arxiv.org/pdf/2002.10857.pdf](https://arxiv.org/pdf/2002.10857.p
 #### But unfortunately, we did not achieve the accuracy rate mentioned in the paper by resnet50 baseline 
 we are adjusting the hyperparameters 
 
-## problem above analysis
-we regard circle loss as a embedding loss, so we use randomsampler function when we load the data.
-
 # Run
 ```
 >>> python train2.py
