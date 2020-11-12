@@ -32,7 +32,7 @@ we are adjusting the hyperparameters
 | 67.4%  |       | 128   | 0.2  | 0.0005  | 0.1  | 60   | 32    |
 | 70.3%  |       | 256   | 0.2  | 0.0003  | 0.1  | 60   | 32    |     
 
-## when the loss achieives 4~6, it will fluctuate
+## when the loss reach [4,7], it will fluctuate. 
 
 # circle loss
 the dist of the circle loss achieved by cos dist in paper, we add euclidean dist in the loss.py
