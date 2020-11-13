@@ -197,10 +197,14 @@ class CircleLoss(nn.Module):
 			alpha_n = torch.clamp_min(s_n.detach() + self.m, min=0.)
 			delta_p = 1 - self.m
 			delta_n = self.m
-			logit_p = - self.gamma * alpha_p * (s_p - delta_p) * pos_mat
-			logit_n = self.gamma * alpha_n * (s_n - delta_n) * neg_mat
-
-			loss = F.softplus(torch.logsumexp(logit_p, dim=1) + torch.logsumexp(logit_n, dim=1)).mean()
+			# logit_p = - self.gamma * alpha_p * (s_p - delta_p) * pos_mat
+			logit_p = - self.gamma * alpha_p * (s_p - delta_p)
+			# logit_n = self.gamma * alpha_n * (s_n - delta_n) * neg_mat
+			logit_n = self.gamma * alpha_n * (s_n - delta_n)
+			exp_p = torch.exp(logit_p) * pos_mat
+			exp_n = torch.exp(logit_n) * neg_mat
+			# loss = F.softplus(torch.logsumexp(logit_p, dim=1) + torch.logsumexp(logit_n, dim=1)).mean()
+			loss = F.softplus(exp_p.sum(dim=1).log() + exp_n.sum(dim=1).log()).mean()
 
 			return loss
 
