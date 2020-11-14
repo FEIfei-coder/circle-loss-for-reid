@@ -6,6 +6,8 @@ paper: [https://arxiv.org/pdf/2002.10857.pdf](https://arxiv.org/pdf/2002.10857.p
 #### But unfortunately, we did not achieve the accuracy rate mentioned in the paper by resnet50 baseline 
 we are adjusting the hyperparameters 
 
+## CircleLoss is in losses.py
+
 # Run
 ```
 >>> python train2.py
